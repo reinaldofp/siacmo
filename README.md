@@ -2,8 +2,8 @@
 # SIACMO - System Academy with Moodle
 
 ## Introdução
-
-Estre sistema visa criar um gerenciador acadêmico totalmente integrado com o Moodle.
+ 
+Estre sistema visa desenvolver um gerenciador acadêmico totalmente open source e integrado com o Moodle.
 Nele o aluno será matriculado no curso desejado, e após esta matrícula o próprio sistema 
 aloca o aluno no Moodle, o aluno conseguirá acessar seu conteúdo através de um RP, onde terá
 sua vida acadêmica controlada pelo SIACMO.
