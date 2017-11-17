@@ -1,0 +1,123 @@
+<?= $this->doctype() ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?= $this->headTitle('SIACMO - System Academic with Moodle')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?= $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+            ->prependStylesheet($this->basePath('css/style.css'))
+            ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
+            ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+        ?>
+
+
+
+        <!-- Scripts -->
+        <?= $this->headScript()
+            ->prependFile($this->basePath('js/bootstrap.min.js'))
+            ->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+        ?>
+    </head>
+        <body>
+
+        <div class="container navbar-fixed-top">
+            <div class="col-md-4">
+                <!-- Page header logo-->
+                <div class="app-caption"><img src="img/logo.png"></div>
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-2">
+                <!-- Page header avatar -->
+                    <div class="app-caption"><img src="img/avatar.png"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Navigation Bar -->
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="<?= $this->url('home') ?>">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Pessoas<b class="caret"></b>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="<?= $this->url('usuario') ?>">Usuário</a>
+                                                <a href="<?= $this->url('perfil') ?>">Perfil</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Pedagógico <b class="caret"></b>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="<?= $this->url('projeto', ['page'=>'contents']) ?>">
+                                                    Projeto Pedagógico
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="<?= $this->url('disciplina', ['page'=>'contents']) ?>">Disciplina</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?= $this->url('sala', ['page'=>'contents']) ?>">
+                                                    Sala de aula
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Financeiro <b class="caret"></b>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="<?= $this->url('produto', ['page'=>'contents']) ?>">
+                                                    Produto
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="<?= $this->url('venda', ['page'=>'contents']) ?>">Venda</a>
+                                            </li>
+
+                                        </ul>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="<?= $this->url('integrar') ?>">Integrar</a>
+                                </li>
+                                <li>
+                                    <a href="<?= $this->url('secretaria')?>">Secretaria</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Breadcrumbs -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Page content placeholder -->
+                    <?= $this->content; ?>
+                </div>
+            </div>
+        </div>
+        <?= $this->inlineScript() ?>
+    </body>
+</html>
