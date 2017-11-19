@@ -179,9 +179,14 @@ textarea {
 optgroup {
   font-weight: bold;
 }
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
+}
+rolagem-overflow{
+  max-width: 100%;
+  overflow: scroll
 }
 td,
 th {
@@ -6753,5 +6758,15 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.navbar-fixed-top2{
+  padding-right: 0;
+  padding-left: 0;
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  max-height: 200px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
