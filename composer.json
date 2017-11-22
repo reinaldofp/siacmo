@@ -30,15 +30,10 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "Projeto\\": "module/Projeto/src/",
-            "Disciplina\\": "module/Disciplina/src/",
-            "Sala\\": "module/Sala/src/",
-            "Secretaria\\": "module/Secretaria/src/",
-            "Usuario\\": "module/Usuario/src/",
-            "Perfil\\": "module/Perfil/src/",
-            "Produto\\": "module/Produto/src/",
-            "Venda\\": "module/Venda/src/",
-            "Integrar\\": "module/Integrar/src/"
+            "Pessoas\\": "module/Pessoas/src/",
+            "Pedagogico\\": "module/Pedagogico/src/",
+            "Lms\\": "module/Lms/src/",
+            "Financeiro\\": "module/Financeiro/src/"
         }
     },
     "autoload-dev": {

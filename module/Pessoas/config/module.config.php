@@ -5,7 +5,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Application;
+namespace Pessoas;
 
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
@@ -14,32 +14,22 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'home' => [
+            'Pessoas' => [
                 'type' => Literal::class,
                 'options' => [
-                    'route'    => '/',
+                    'route'    => '/pessoas',
                     'defaults' => [
                         'controller' => Controller\IndexController::class,
                         'action'     => 'index',
                     ],
                 ],
             ],
-            'application' => [
+            'pessoas' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/application[/:action]',
+                    'route'    => '/pessoas[/:action]',
                     'defaults' => [
                         'controller' => Controller\IndexController::class,
-                        'action'     => 'index',
-                    ],
-                ],
-            ],
-            'user' => [
-                'type'    => Segment::class,
-                'options' => [
-                    'route'    => '/user[/:action]',
-                    'defaults' => [
-                        'controller' => Controller\UserController::class,
                         'action'     => 'index',
                     ],
                 ],
@@ -49,7 +39,6 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
-            Controller\UserController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [
@@ -59,10 +48,12 @@ return [
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => [
-            'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'secretaria/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404'               => __DIR__ . '/../view/error/404.phtml',
-            'error/index'             => __DIR__ . '/../view/error/index.phtml',
+            'pessoas/index/index' => __DIR__ . '/../view/pessoas/index/index.phtml',
+
+            // Páginas padrã para Layout e Error
+            'layout/layout'           => __DIR__ . '/../../Application/view/layout/layout.phtml',
+            'error/404'               => __DIR__ . '/../../Application/view/error/404.phtml',
+            'error/index'             => __DIR__ . '/../../Application/view/error/index.phtml',
         ],
         'template_path_stack' => [
            __DIR__ . '/../view',
