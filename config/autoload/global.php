@@ -13,4 +13,10 @@
 
 return [
     // ...
+    'bd' =>[
+        'driver' => 'Pdo',
+        'dsn' => 'mysql:dbname=siacmo:host=localhost;charset=utf8',
+        'username'=> 'root',
+        'password'=> ''
+    ]
 ];
