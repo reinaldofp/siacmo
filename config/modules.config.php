@@ -25,8 +25,4 @@ return [
     'Zend\Router',
     'Zend\Validator',
     'Application',
-    'Pessoas',
-    'Pedagogico',
-    'Lms',
-    'Financeiro',
 ];

@@ -29,11 +29,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Application\\": "module/Application/src/",
-            "Pessoas\\": "module/Pessoas/src/",
-            "Pedagogico\\": "module/Pedagogico/src/",
-            "Lms\\": "module/Lms/src/",
-            "Financeiro\\": "module/Financeiro/src/"
+            "Application\\": "module/Application/src/"
+
         }
     },
     "autoload-dev": {

@@ -34,12 +34,72 @@ return [
                     ],
                 ],
             ],
-            'user' => [
+            'usuario' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/user[/:action]',
+                    'route'    => '/usuario[/:action]',
                     'defaults' => [
-                        'controller' => Controller\UserController::class,
+                        'controller' => Controller\UsuarioController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
+            'disciplina' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/disciplina[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\DisciplinaController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
+            'lms' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/lms[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\LmsController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
+            'matricula' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/matricula[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\MatriculaController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
+            'perfil' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/perfil[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\PerfilController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
+            'projeto' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/projeto[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\ProjetoController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
+            'sala' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/sala[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\SalaController::class,
                         'action'     => 'index',
                     ],
                 ],
@@ -49,7 +109,13 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
-            Controller\UserController::class => InvokableFactory::class,
+            Controller\UsuarioController::class => InvokableFactory::class,
+            Controller\DisciplinaController::class => InvokableFactory::class,
+            Controller\LmsController::class => InvokableFactory::class,
+            Controller\MatriculaController::class => InvokableFactory::class,
+            Controller\PerfilController::class => InvokableFactory::class,
+            Controller\ProjetoController::class => InvokableFactory::class,
+            Controller\SalaController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [
