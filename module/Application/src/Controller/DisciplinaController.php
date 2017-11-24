@@ -12,7 +12,7 @@ use Zend\View\Model\ViewModel;
 
 class DisciplinaController extends AbstractActionController
 {
-    public function indexAction()
+    public function disciplinaAction()
     {
         return new ViewModel();
     }

@@ -12,7 +12,7 @@ use Zend\View\Model\ViewModel;
 
 class MatriculaController extends AbstractActionController
 {
-    public function indexAction()
+    public function matriculaAction()
     {
         return new ViewModel();
     }

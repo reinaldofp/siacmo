@@ -12,7 +12,7 @@ use Zend\View\Model\ViewModel;
 
 class ProjetoController extends AbstractActionController
 {
-    public function indexAction()
+    public function projetoAction()
     {
         return new ViewModel();
     }

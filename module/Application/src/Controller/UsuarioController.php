@@ -12,7 +12,7 @@ use Zend\View\Model\ViewModel;
 
 class UsuarioController extends AbstractActionController
 {
-    public function indexAction()
+    public function usuarioAction()
     {
         return new ViewModel();
     }

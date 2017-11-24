@@ -12,7 +12,7 @@ use Zend\View\Model\ViewModel;
 
 class LmsController extends AbstractActionController
 {
-    public function indexAction()
+    public function lmsAction()
     {
         return new ViewModel();
     }

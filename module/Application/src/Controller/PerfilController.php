@@ -12,7 +12,7 @@ use Zend\View\Model\ViewModel;
 
 class PerfilController extends AbstractActionController
 {
-    public function indexAction()
+    public function perfilAction()
     {
         return new ViewModel();
     }

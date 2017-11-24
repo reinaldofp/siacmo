@@ -40,7 +40,7 @@ return [
                     'route'    => '/usuario[/:action]',
                     'defaults' => [
                         'controller' => Controller\UsuarioController::class,
-                        'action'     => 'index',
+                        'action'     => 'usuario',
                     ],
                 ],
             ],
@@ -50,7 +50,7 @@ return [
                     'route'    => '/disciplina[/:action]',
                     'defaults' => [
                         'controller' => Controller\DisciplinaController::class,
-                        'action'     => 'index',
+                        'action'     => 'disciplina',
                     ],
                 ],
             ],
@@ -60,7 +60,7 @@ return [
                     'route'    => '/lms[/:action]',
                     'defaults' => [
                         'controller' => Controller\LmsController::class,
-                        'action'     => 'index',
+                        'action'     => 'lms',
                     ],
                 ],
             ],
@@ -70,7 +70,7 @@ return [
                     'route'    => '/matricula[/:action]',
                     'defaults' => [
                         'controller' => Controller\MatriculaController::class,
-                        'action'     => 'index',
+                        'action'     => 'matricula',
                     ],
                 ],
             ],
@@ -80,7 +80,7 @@ return [
                     'route'    => '/perfil[/:action]',
                     'defaults' => [
                         'controller' => Controller\PerfilController::class,
-                        'action'     => 'index',
+                        'action'     => 'perfil',
                     ],
                 ],
             ],
@@ -90,7 +90,7 @@ return [
                     'route'    => '/projeto[/:action]',
                     'defaults' => [
                         'controller' => Controller\ProjetoController::class,
-                        'action'     => 'index',
+                        'action'     => 'projeto',
                     ],
                 ],
             ],
@@ -100,7 +100,7 @@ return [
                     'route'    => '/sala[/:action]',
                     'defaults' => [
                         'controller' => Controller\SalaController::class,
-                        'action'     => 'index',
+                        'action'     => 'sala',
                     ],
                 ],
             ],
